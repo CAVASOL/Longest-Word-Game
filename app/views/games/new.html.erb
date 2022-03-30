@@ -1,22 +1,22 @@
 <body>
-  <div class="container" style="text-align: center;">
+  <div class="body-container">
 
-    <h1 class="newgame mt-5">New game</h1>
+    <h1 class="newgame">Longest Word Game</h1>
 
-    <div class="container mt-5">
+    <div class="letters">
       <% @letters.each do |letter| %>
-        <p class="d-inline btn btn-warning align-middle"><%= letter %></p>
+        <p class="letter"><%= letter %></p>
       <% end %>
     </div>
 
-    <p class="form-prefix m-5">What is the longest word you can find?</p>
+    <p class="form-prefix">What is the longest word you can find?</p>
 
     <form action="/score" method="POST" class="form-inline">
       <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
       <%= hidden_field_tag :letters, @letters %>
       <div class ="form-group d-flex m-1">
-        <input type="text" name="word" class="form-control mr-3">
-        <input type="submit" value="Play" class="btn btn-dark">
+        <input type="text" name="word" class="form-control">
+        <input type="submit" value="Play" class="btn">
       </div>
     </form>
 

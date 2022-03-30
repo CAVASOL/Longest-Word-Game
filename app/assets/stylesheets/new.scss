@@ -1,6 +1,60 @@
+.body-container {
+  padding: 20px;
+}
 
+h1 {
+  font-family: 'Amatic SC', cursive;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.letters {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .letter {
+    margin: 4px;
+    width: 32px;
+    height: 32px;
+    background-color: wheat;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+  }
+}
+
+.form-prefix {
+  font-family: 'Amatic SC', cursive;
+  font-size: 24px;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
 
 .form-inline {
   display: flex;
   justify-content: center;
+  align-items: center;
+
+  .form-control {
+    border: none;
+    margin: 0;
+    background-color: wheat;
+    margin-right: 4px;
+  }
+
+  .btn {
+    font-family: 'Amatic SC', cursive;
+    background-color: #3C3C3C;
+    color: white;
+    font-weight: bold;
+  }
 }
