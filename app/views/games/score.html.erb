@@ -6,7 +6,8 @@
   <div class="result">
     <% if @included %>
       <% if @english_word %>
-        <p><strong>Congratulations!</strong> "<strong><%= @word %></strong>" is a valid English word!</p>
+        <p><strong>Congratulations!</strong></p>
+        <p>"<strong><%= @word %></strong>" is a valid English word!</p>
       <% else %>
         <p>Sorry, but "<strong><%= @word %></strong>" does not seem to be a valid English word...</p>
       <% end %>
